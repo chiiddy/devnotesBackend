@@ -5,7 +5,7 @@ import router from "./src/routes/routes.js";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import crypto from 'crypto'
+// import crypto from 'crypto'
 
 dotenv.config();
 
@@ -35,9 +35,9 @@ async function connect() {
 connect();
 
 // to generate jwt token
-const secrectkey = () => {
+// const secrectkey = () => {
     
-    const secrectkey = crypto.randomBytes(32).toString('hex');
-    console.log(secrectkey);
-}
-secrectkey();
+//     const secrectkey = crypto.randomBytes(32).toString('hex');
+//     console.log(secrectkey);
+// }
+// secrectkey();
